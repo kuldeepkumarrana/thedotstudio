@@ -1,0 +1,109 @@
+@font-face {
+    font-family: Myfont;
+    src: url(gotham/GothamBook.ttf);
+}
+:root{
+    --primary: rgba(17, 74, 141, 0.8);;
+
+}
+
+.container{
+    width: 1070px;
+    height: 808px;
+    margin: auto;
+}
+.first_row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.card1, .card2, .card3, .card4 {
+    /* background-color: red; */
+    width: 500px;
+    position: relative;
+    overflow: hidden;
+    background-image: url("/images/1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 1px -100px 100px rgb(0, 0, 0);
+    border-radius: 8px;
+    z-index: 99999;
+}
+.Card_heading{
+    text-align: center;
+    padding-top: 270px;
+    color: white;
+    font-family: Myfont;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 30.8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: -3%;
+}
+.Card_heading span, .yellow_color{
+    color: rgba(255, 199, 88, 1);
+}
+.card_details{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 99;
+    background-color: rgba(17, 74, 141, 0.8);
+    padding: 30px 20px 30px 20px;
+    width: 460px;
+    height: 200px;
+    transition: 0.5s;
+    transform: translate3d(-500px, 500px, -500px);
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    font-family: Myfont;
+    color: white;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card_details h1{
+    margin: 0;
+    font-family: Myfont;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 35.2px;
+    letter-spacing: -5%;
+}
+.card_details p{
+    font-family: Myfont;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -5%;
+    color: rgba(255, 255, 255, 1);
+}
+.card1:hover .card_details, .card2:hover .card_details, .card3:hover .card_details,.card4:hover .card_details{
+    transform: translate3d(0, 0, 0);
+    visibility: inherit;
+    
+}
+.card1:hover .Card_heading, .card2:hover .Card_heading, .card3:hover .Card_heading, .card4:hover .Card_heading{
+    visibility: hidden;
+}
+.card2{
+    background-image: url("/images/2.png");
+}
+.card2 .Card_heading, .card3 .Card_heading{
+    padding-top: 250px;
+}
+.card3{
+    background-image: url("/images/3.png");
+}
+.card4{
+    background-image: url("/images/4.png"); 
+}
+.card4 .Card_heading{
+    padding-top: 270px;
+}
+
