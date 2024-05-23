@@ -22,7 +22,8 @@
     width: 500px;
     position: relative;
     overflow: hidden;
-    background-image: url("/images/1.png");
+    /* background-image: url("/images/1.png"); */
+    background-image: url("/TheDotStudio/images/1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -92,16 +93,16 @@
     visibility: hidden;
 }
 .card2{
-    background-image: url("/images/2.png");
+    background-image: url("/TheDotStudio/images/2.png");
 }
 .card2 .Card_heading, .card3 .Card_heading{
     padding-top: 250px;
 }
 .card3{
-    background-image: url("/images/3.png");
+    background-image: url("/TheDotStudio/images/3.png");
 }
 .card4{
-    background-image: url("/images/4.png"); 
+    background-image: url("/TheDotStudio/images/4.png"); 
 }
 .card4 .Card_heading{
     padding-top: 270px;
